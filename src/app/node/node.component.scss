@@ -1,8 +1,7 @@
 @import "../../assets/stylesheets/base/colors";
 
 .wrapper{
-  margin: 10px 0;
-  padding: 10px;
+
   border: 1px solid #aaaaaa;
   background: #f8f8f8;
   border-radius: 5px;
@@ -55,25 +54,32 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
+    width: 7px;
+    height: 7px;
+    border-left: 3px solid #979797;
+    border-bottom: 3px solid #979797;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
   }
 
   &:not(.expanded){
     &::before {
-      border-bottom: 7px solid $text-color;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
     }
   }
 
   &.expanded{
     &::before {
-      border-top: 7px solid $text-color;
+      margin-top: 5px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
     }
   }
 }
 
 .blocks-wrapper{
-  margin: 20px 0;
+  padding-top: 12px;
   text-align: center;
   color: $danger-color;
   font-weight: 700;

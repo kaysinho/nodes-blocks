@@ -33,19 +33,22 @@
   padding: 0 4px;
   font-size: 12px;
   font-weight: 500;
-  min-width: 38px;
+  width: 60px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-
-  &.success{
+  &.success > span:first-child{
     color: $success-color;
   }
 
-  &.danger{
+  &.danger> span:first-child{
     color: $danger-color;
   }
 
-  &.warning{
+  &.warning> span:first-child{
     color: $warning-color;
   }
 }

@@ -7,8 +7,9 @@
 
 <ng-template #loaded>
   <div [ngClass]="{ wrapper: true, success: online, danger: !online }">
+    <span style="font-size: 30px;">&#8226;</span>
     <span>
-      &#8226; {{ online ? 'Online' : 'Offline' }}
+       {{ online ? 'Online' : 'Offline' }}
     </span>
   </div>
 </ng-template>
